@@ -16,8 +16,6 @@ END IF
 w = width * (plot_area_x_upper - plot_area_x_lower)
 h = height * (plot_area_y_upper - plot_area_y_lower)
 CALL coords_xy(plot_area_x_lower, plot_area_y_lower, x, y)
-CALL rectangle_dp(x, y, w, h, "none", 1.0D0, "#000000")
-
 
 CALL rectangle_dp(0.0D0, 1.0D0 * height, &
                   1.0D0 * width, height * plot_area_y_lower-1.0D0, &
@@ -31,6 +29,7 @@ CALL rectangle_dp(0.0D0, 1.0D0 * height, &
 CALL rectangle_dp(1.0D0 * plot_area_x_upper * width, 1.0D0 * height, &
                   1.0D0 * width * (1.0D0 - plot_area_x_upper), 1.0D0 * height, &
                   "#FFFFFF", 1.0D0, "#FFFFFF") ! BLOCK RIGHT
+CALL rectangle_dp(x, y, w, h, "none", 1.0D0, "#000000")
 
 
 
