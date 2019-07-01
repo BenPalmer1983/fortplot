@@ -23,7 +23,7 @@ CALL rectangle_dp(0.0D0, 1.0D0 * height, &
                   1.0D0 * width, height * plot_area_y_lower-1.0D0, &
                   "#FFFFFF", 1.0D0, "#FFFFFF") ! BLOCK UNDER
 CALL rectangle_dp(0.0D0, height * (1.0D0 - plot_area_x_upper), &
-                  1.0D0 * width, height * (1.0D0 - plot_area_x_upper), &
+                  1.0D0 * width, height * (1.0D0 - plot_area_x_upper)+1.0D0, &
                   "#FF0000", 1.0D0, "#FFFFFF") ! BLOCK OVER
 
 
