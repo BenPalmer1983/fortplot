@@ -13,6 +13,7 @@ CONTAINS
 INCLUDE "plot.new_plot.f90"
 INCLUDE "plot.style.f90"
 INCLUDE "plot.init.f90"
+INCLUDE "plot.plot_limits.f90"
 INCLUDE "plot.calc_grid.f90"
 INCLUDE "plot.add_instruction.f90"
 INCLUDE "plot.add_background.f90"

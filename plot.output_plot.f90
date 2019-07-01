@@ -8,6 +8,7 @@ CHARACTER(len=16) :: height_text
 !###########################################
 
 ! BEFORE ADDING ANYTHING
+CALL plot_limits()
 CALL calc_grid()
 
 

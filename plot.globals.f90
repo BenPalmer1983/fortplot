@@ -20,6 +20,18 @@ REAL(kind=DoubleReal) :: x_max = 0.0D0
 REAL(kind=DoubleReal) :: y_min = 0.0D0
 REAL(kind=DoubleReal) :: y_max = 0.0D0
 
+LOGICAL :: x_lims = .FALSE.
+LOGICAL :: y_lims = .FALSE.
+
+REAL(kind=DoubleReal) :: x_plot_min = 0.0D0
+REAL(kind=DoubleReal) :: x_plot_max = 0.0D0
+REAL(kind=DoubleReal) :: y_plot_min = 0.0D0
+REAL(kind=DoubleReal) :: y_plot_max = 0.0D0
+
+INTEGER(kind=StandardInteger) :: x_scale = 1   ! Linear by default
+INTEGER(kind=StandardInteger) :: y_scale = 1   ! Linear by default
+
+
 
 REAL(kind=DoubleReal), DIMENSION(:), ALLOCATABLE :: x_grid
 REAL(kind=DoubleReal), DIMENSION(:), ALLOCATABLE :: y_grid
