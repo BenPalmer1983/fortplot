@@ -4,7 +4,7 @@ PROGRAM fplot
 
 USE MPI
 USE kinds
-USE plot, ONLY: new_plot, output_plot, add_plot
+USE plot, ONLY: new_plot, output_plot, add_plot, set_ylims
 
 IMPLICIT NONE
 
@@ -43,6 +43,7 @@ END DO
 
 ! Example Usage
 CALL new_plot("output")
+CALL set_ylims(-10.0D0, 20.0D0)
 CALL add_plot(x, y)
 CALL output_plot()
 

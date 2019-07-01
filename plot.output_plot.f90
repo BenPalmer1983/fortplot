@@ -15,11 +15,10 @@ CALL calc_grid()
 ! BACKGROUND AND AXES
 CALL style()
 CALL add_background()
+CALL make_plots()
 CALL border()
 CALL axes()
 CALL add_grid()
-CALL make_plots()
-!CALL text(250.0D0, 250.0D0, "test")
 
 CALL blank_line(svg_head)
 CALL blank_line(width_text)

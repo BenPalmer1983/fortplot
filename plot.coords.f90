@@ -67,7 +67,8 @@ REAL(kind=DoubleReal) :: pad_xl, pad_xu
 !x_out = pad_xl + (rx2 * ((x_in - x_min) / rx1))
 
 
-CALL x_in_plotarea((x_in - x_min) / (x_max - x_min), plot_area_x_lower, plot_area_x_upper, x_out)
+!CALL x_in_plotarea((x_in - x_min) / (x_max - x_min), plot_area_x_lower, plot_area_x_upper, x_out)
+CALL x_in_plotarea((x_in - x_plot_min) / (x_plot_max - x_plot_min), plot_area_x_lower, plot_area_x_upper, x_out)
 
 
 
@@ -82,7 +83,7 @@ REAL(kind=DoubleReal), INTENT(OUT) :: y_out
 REAL(kind=DoubleReal) :: ry1, ry2
 REAL(kind=DoubleReal) :: pad_yl, pad_yu
 !###########################################
-CALL y_in_plotarea((y_in - y_min) / (y_max - y_min), plot_area_y_lower, plot_area_y_upper, y_out)
+CALL y_in_plotarea((y_in - y_plot_min) / (y_plot_max - y_plot_min), plot_area_y_lower, plot_area_y_upper, y_out)
 END SUBROUTINE pc_y
 
 

@@ -2,8 +2,8 @@ SUBROUTINE calc_grid()
 
 
 
-CALL calc_grid_make(x_min, x_max, x_grid)
-CALL calc_grid_make(y_min, y_max, y_grid)
+CALL calc_grid_make(x_plot_min, x_plot_max, x_grid)
+CALL calc_grid_make(y_plot_min, y_plot_max, y_grid)
 
 
 

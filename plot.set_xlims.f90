@@ -6,4 +6,4 @@ REAL(kind=DoubleReal), INTENT(IN) :: xmax
 x_lims = .TRUE.
 x_plot_min = xmin
 x_plot_max = xmax
-END SUBROUTINE plot_limits 
+END SUBROUTINE set_xlims 
