@@ -42,7 +42,7 @@ DO n=1,101
 END DO
 
 ! Example Usage
-CALL new_plot("output")
+CALL new_plot("output",7)
 CALL set_ylims(-10.0D0, 20.0D0)
 CALL add_plot(x, y)
 CALL output_plot()
